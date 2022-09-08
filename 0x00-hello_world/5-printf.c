@@ -1,8 +1,9 @@
-#include <stdio.h> 
+#include <stdio.h>
+
 /**
 *function main - entry point
 *
-*return value 0 (success)
+* return 0 (success)
 */
 int main(void)
 {
