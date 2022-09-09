@@ -1,9 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
-
-/* betty style doc for functio main goes there */
+/**
+ * main - Prints results if number is positive, zero or negative
+ *
+ * Return: Always(Success)
+ */
 int main(void)
 {
 	int n;
@@ -21,7 +23,7 @@ int main(void)
 	}
 	else
 	{
-		printf("%d is egative\n", n);
+		printf("%d is negative\n", n);
 	}
 	return (0);
 }
