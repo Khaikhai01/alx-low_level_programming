@@ -1,9 +1,8 @@
 #include <stdio.h>
 
 /**
-* main - Entry point
+* main - Prints alphabets in lowercase and uppercase
 *
-* prints all a to z in lowercase and uppercase followed by new line
 * Return: Always(Success)
 */
 int main(void)
@@ -11,12 +10,12 @@ int main(void)
 	char x;
 
 	for (x = 'a'; x <= 'z'; x++)
-		putchar('\n');
+		putchar('x');
 
 	for (x = 'A'; x <= 'Z'; x++)
-		putchar('\n');
+		putchar('x');
 
-	putchar('\n'); 
+	putchar('\n');
 
 	return (0);
 }
