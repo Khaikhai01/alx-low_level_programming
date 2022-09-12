@@ -16,7 +16,7 @@ int main(void)
 			for (num3 = num2 + 1; num3 < 10; num3++)
 
 				if (num2 != num1 && num3 != num2)
-				{	
+				{
 
 					putchar((num1 % 10) + '0');
 					putchar((num2 % 10) + '0');
