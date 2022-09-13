@@ -18,9 +18,9 @@ int main(void)
 				if (num2 != num1 && num3 != num2)
 				{
 
-					putchar((num1 % 10) + '0');
-					putchar((num2 % 10) + '0');
-					putchar((num3 % 10) + '0');
+					putchar(num1);
+					putchar(num2);
+					putchar(num3);
 
 					if (num1 == 7 && num2 == 8 && num3 == 9)
 						continue;
