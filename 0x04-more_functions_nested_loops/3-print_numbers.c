@@ -13,10 +13,8 @@ void print_numbers(void)
 
 	for (num = 48; num < 58; num++)
 	{
-		_putchar(num);
+		putchar(num);
 	}
 
-	_putchar('\n');
-
-	return (0);
+	putchar(10);
 }
