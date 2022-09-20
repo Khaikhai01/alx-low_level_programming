@@ -8,10 +8,9 @@
 */
 void print_rev(char *s)
 {
-	if (*s)
-	{
-		reverse(s + 1);
-		printf("%c", *s);
-	}
-	putchar('\n');
+	int len = strlen(s);
+
+	while (len--)
+		putchar(*(s + len));
+	putchar(10);
 }
