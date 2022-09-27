@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- *@s: pointer of the memory location where the memory will be set
+ *@s: pointer to the block of memory to fill.
  *@b: value that is to be copied to the memory block
- *@n: the number of bytes in the memory block which is set
- *Return: returns a pointer to the block of memory after populating it
+ *@n: the number of bytes to be filled
+ *Return: pointer to the block of memory after populating it.
  */
 
 char *_memset(char *s, char b, unsigned int n)
@@ -15,5 +15,6 @@ char *_memset(char *s, char b, unsigned int n)
 	{
 		*(s + i) = b;
 	}
+	putchar('\n');
 	return (s);
 }
