@@ -13,13 +13,13 @@
 char *_strpbrk(char *s, char *accept)
 {
 	char *ptr = strpbrk (s, accept);
-    if(ptr != NULL)
-    {
-        return (ptr);
-    }
-    else
-    {
-        return (NULL);
-    }
-    return 0;
+	if(ptr != NULL)
+    	{	
+        	return (ptr);
+	}
+	else
+    	{
+        	return (NULL);
+    	}
+    	return 0;
 }
