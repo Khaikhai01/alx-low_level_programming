@@ -3,7 +3,7 @@
 
 /**
  *main - function to print the programs name
- *@int - int parameter
+ *@argc: argc parameter
  @argv: string parameter
  *Return: Always 0
  */
