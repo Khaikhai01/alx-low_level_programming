@@ -2,8 +2,8 @@
 
 /**
  *main - function to print the programs name
- *@argc: argc parameter
- @argv: string parameter
+ *@argc: number of arguments passed to function
+ @argv: argument vector of pointers to strings
  *Return: Always 0
  */
 int main(int argc __attribute__((unused)), char *argv[])
