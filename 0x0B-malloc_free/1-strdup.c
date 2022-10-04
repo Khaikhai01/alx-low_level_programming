@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- *_strdup -  function returns a pointer to a new string 
+ *_strdup -  function returns a pointer to a new string
  *which is a duplicate of the string str.
  *@str: string to be duplicated
  *Return: returns NULL if str = NULL
@@ -24,7 +24,7 @@ char *_strdup(char *str)
 
 	/* copy string */
 	dup_offset = dup;
-	while(*str)
+	while (*str)
 	{
 		*dup_offset = *str;
 		dup_offset++;
