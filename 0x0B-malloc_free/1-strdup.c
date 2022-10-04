@@ -14,7 +14,7 @@ char *_strdup(char *str)
 {
 	int str_size;
 	char *dup;
-	char *dup_offset;
+	char *s;
 
 	/*Allocate memory for duplicate*/
 	str_size = strlen(str);
@@ -23,14 +23,14 @@ char *_strdup(char *str)
 		return (NULL);
 
 	/* copy string */
-	dup_offset = dup;
+	s = dup;
 	while (*str)
 	{
-		*dup_offset = *str;
-		dup_offset++;
+		*s = *str;
+		s++;
 		str++;
 	}
-	*dup_offset = '\0';
+	*s = '\0';
 
 	return (dup);
 }
