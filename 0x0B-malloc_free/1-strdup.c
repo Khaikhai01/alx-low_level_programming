@@ -12,26 +12,22 @@
 
 char *_strdup(char *str)
 {
-	int str_size;
-	char *dup;
-	char *s;
+	int i = 1, j = 0;
+	char *newstr;
 
-	/*Allocate memory for duplicate*/
-	str_size = strlen(str);
-	dup = (char *)malloc(sizeof(char) * str_size + 1);
-	if (dup == NULL)
+	if (str == NULL)
 		return (NULL);
-
-	/* copy string */
-	s = dup;
-	while (*str)
+	while (str[i])
+		i++;
+	newstr = (char *)malloc(i * sizeof(char) + 1);
+	if (newstr == NULL)
+		return (NULL);
+	while (j < i)
 	{
-		*s = *str;
-		s++;
-		str++;
+		newstr[j] = str[j];
+		j++;
 	}
-	*s = '\0';
-
-	return (dup);
-	free(dup);
+	newstr[j] = '\0';
+	return (newstr);
+	free(newstr);
 }
