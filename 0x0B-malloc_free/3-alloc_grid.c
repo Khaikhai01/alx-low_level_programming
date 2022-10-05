@@ -4,8 +4,7 @@
  *alloc_grid - 2 dimensional array of integers.
  *@width: width paramenter
  *@height: height parameter
- *Retrun: NULL on failure
- *        if width and height is 0 or negative, returns NULL.
+ *Retrun: 2D array of integers
  */
 
 int **alloc_grid(int width, int height)
