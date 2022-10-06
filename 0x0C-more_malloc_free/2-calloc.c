@@ -23,6 +23,8 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	ptr = malloc(allocated_mem);
 
+
+
 	if (ptr == NULL)
 		return (NULL);
 
