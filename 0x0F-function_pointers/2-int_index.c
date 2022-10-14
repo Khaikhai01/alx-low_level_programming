@@ -2,10 +2,9 @@
 #include "function_pointers.h"
 
 /**
- *int_index - returns the index of the first element
- *for which the cmp function does not return
- *@array: array parameter
- *size -  the number of elements in the array array
+ *int_index - searches for an index
+ *@array: array parameter to be searched
+ *@size:  the number of elements in the array
  *@cmp: pointer to the function to be used to compare values
  *
  *Return: -1 if no element matches
