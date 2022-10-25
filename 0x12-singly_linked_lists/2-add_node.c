@@ -11,25 +11,30 @@ list_t *add_node(list_t **head, const char *str)
 {
 	char *x;
 	x = strdup(str);
-	//size_t counter;
-//	counter = 0;
-	struct list_s *tmp;
+	list_t *tmp;
+	tmp = NULL;
 
-	tmp =(struct list_s*)malloc(sizeof(struct list_s));
+	tmp =malloc(sizeof(list_t));
 
 	if (tmp == NULL)
 	{
 		return (0);
 	}
-	else
+	if (str == NULL)
 	{
-		tmp->str = x;
+		tmp->str = NULL;
+		tmp->len = 0;
 		tmp->next = *head;
 		*head = tmp;
 	}
-//	counter++;
+	else
+	{
+		tmp->str = x;
+		tmp->len = strlen(x);
+		tmp->next = *head;
+		*head = tmp;
+	}
 
-	//return ("[%u] %p\n", tmp->len, tmp);
 
 	return (tmp);
 }
