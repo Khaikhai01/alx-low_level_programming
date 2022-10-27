@@ -4,9 +4,8 @@
  *print_listint - prints list.
  *@h: list
  *
- *Return: the number of nodes
+ *Return: size_t
  */
-
 size_t print_listint(const listint_t *h)
 {
 	size_t x = 0;
