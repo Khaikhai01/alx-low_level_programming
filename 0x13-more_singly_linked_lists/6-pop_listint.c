@@ -17,9 +17,12 @@ int pop_listint(listint_t **head)
 	{
 		return (0);
 	}
-	delNode = *head;
-	*head = (*head)->next;
-	delNode->n = copyN;
+	else
+	{
+		delNode = *head;
+		*head = (*head)->next;
+		delNode->n = copyN;
+	}
 	free(delNode);
 
 	return (copyN);
