@@ -13,6 +13,7 @@ int pop_listint(listint_t **head)
 	listint_t *delNode;
 	int copyN = 0;
 
+	delNode = malloc(sizeof(listint_t));
 	if (*head == NULL)
 	{
 		return (0);
