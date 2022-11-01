@@ -11,9 +11,6 @@ int get_endianness(void)
 {
 
 	int num = 1;
-	char *c;
 
-	c = (char *) &num;
-
-	return ((int)*c);
+	return (*((char *) &num) + '0');
 }
