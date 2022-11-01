@@ -9,13 +9,5 @@
 
 int get_bit(unsigned long int n, unsigned int index)
 {
-	unsigned long int bitstatus;
-
-	bitstatus = (n >> index) & 1;
-	if (bitstatus == 0 || bitstatus == 1)
-	{
-		return (bitstatus);
-	}
-	else
-		return (-1);
+	return ((n >> index) & 0x01);
 }
